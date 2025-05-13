@@ -473,7 +473,6 @@ main{
     font-size: 0.75rem;
 }
 
-<<<<<<< HEAD
 .tag.tool{
     background-color: #27ae60;
     color: white;
@@ -481,12 +480,3 @@ main{
     padding: 0.3rem 0.7rem;
     font-size: 0.75rem;
 }
-=======
-h1{
-    float: left;
-}
-
-img{
-    opacity: 0.5;
-}
->>>>>>> c278b40 (Save local changes before rebase)
