@@ -44,9 +44,31 @@ nav{
 }
 
 footer{
-    color: black;
+    position: relative;
     text-align: center;
-    padding: 1rem;
+    color: black;
+    z-index: 10;
+    background-color: #cdb4db;
+}
+
+footer p{
+    padding-bottom: 1rem;
+}
+
+.social-icons{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons a{
+    margin: 0 0.5rem;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social-icons a:hover{
+    color: #555;
 }
 
 /* Home Page Styling*/
@@ -61,7 +83,7 @@ main{
 }
 
 .rotating-text {
-    height: 1.5em; /* adjust to height of one line */
+    height: 1.5em; 
     overflow: hidden;
     position: relative;
   }
@@ -340,35 +362,14 @@ main{
     text-align: center;
     width: 70%;
     margin: auto;
+    padding-bottom: 2rem;
+    background-color: #FFF4F2;
 }
 
 .learn-more-section a{
     text-decoration: none;
 }
 
-footer{
-    position: relative;
-    text-align: center;
-    padding: 1rem;
-    z-index: 10;
-    background-color: #FFF4F2;
-}
-
-.social-icons{
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.social-icons a{
-    margin: 0 0.5rem;
-    color: #000;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.social-icons a:hover{
-    color: #555;
-}
   
 /* Projects Page Styling*/
 .projects-main{
@@ -377,22 +378,32 @@ footer{
     padding: 2rem;
 }
 
-.filter-dropdown {
-    text-align: center;
-    margin: 2rem 0;
-  }
-  
-  #tag-filter {
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    background-color: #fff;
-    cursor: pointer;
-  }
-  
+.filter-btn.active {
+    background-color: #d17bb5;
+    color: white;
+}
 
-.gallery {
+.project-menu{
+    text-align: left;
+}
+
+.project-menu button {
+    background-color: #f4bbd3;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 0.8em;
+}
+  
+.project-menu button.active, .project-menu button:hover {
+    background-color: #d17bb5;
+}
+  
+.gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
@@ -400,50 +411,72 @@ footer{
     margin-bottom: 1rem;
 }
 
-.card {
-    background: #fff;
+.card{
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
     border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     transition: transform 0.2s ease;
 }
   
-.card:hover {
-    transform: translateY(-5px);
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
   
-.card h2 {
-    font-size: 1.3rem;
+.card h2{
+    font-size: clamp(1.2rem, 2.5vw, 1.4rem);
     margin-bottom: 0.5rem;
 }
   
-.card p {
+.card p{
     color: #555;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    margin-bottom: 0.75rem;
+}
+
+.project-img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin-top: 0.5rem;
     margin-bottom: 0.75rem;
 }
   
-.card a {
+.card a{
     text-decoration: none;
+    font-size: clamp(0.9rem, 2vw, 1rem);
     color: #0077cc;
     font-weight: 500;
 }
-  
+
 .card a:hover {
     text-decoration: underline;
 }
-
-.card-tags {
+   
+.card-tags{
     margin-top: 0.5rem;
+    display: flex;
+    gap: 0.4rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    flex-wrap: wrap;
+}
+  
+.tag.area{
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 12px;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.75rem;
 }
 
-.tag {
-    display: inline-block;
-    background-color: #eee;
-    color: #444;
-    padding: 0.25rem 0.6rem;
-    font-size: 0.75rem;
+.tag.tool{
+    background-color: #27ae60;
+    color: white;
     border-radius: 12px;
-    margin: 0.4rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.75rem;
 }
-  
-  
