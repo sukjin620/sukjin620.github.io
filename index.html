@@ -1,183 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Suk Jin Chung | Portfolio</title>
-        <link rel="stylesheet" href="/style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-    </head>
-
-    <body>
-        <div class="wrapper">
-        <nav>
-            <div class="logo">Suk Jin Chung</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suk Jin Chung | Data Scientist & AI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">SJ</a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
                 <a href="projects.html">Projects</a>
-                <a href="https://drive.google.com/file/d/1veBX4E5Ps4-D-2of-eZSnadqotmmL7RN/view?usp=sharing" target="_blank">Resume</a>
-                <a href="contact.html">Contact</a>
+                <a href="https://drive.google.com/file/d/1RbLULfdV2YJrlM1Jq-Now0sCA2J9s1gR/view?usp=sharing" target="_blank">Resume</a>
+                <a href="contact.html" class="nav-cta">Contact</a>
             </div>
-        </nav>
-        
-        <main>
-            <section class="hero">
-                <img src="assets/quad2.jpeg" alt="Photo of Suk Jin Chung" class="bg-pic"/>
-                <div class="hero-content">
-                    <h1 id="hello">Hello</h1>
-                    <h1>I am Suk Jin 👋🏻</h1>
-                    <div class="rotating-text">
-                        <div class="text-wrapper">
-                          <p>Aspiring Data Analyst</p>
-                          <p>Aspiring Web Developer</p>
-                          <p>Lifelong Learner</p> 
-                        </div>
-                    </div>
-                    <div class="button-wrapper">
-                        <a href="#about">
-                            <button class="primary-btn">Learn More About Me</button>
-                        </a>
-                        <a href="projects.html">
-                            <button class="primary-btn">Check My Projects</button>
-                        </a>
-                    </div>
-                </div>
-            </section>      
-        </main>
-
-        <div class="section-wrapper">
-            <section id="about" class="about-section">
-                <img src="assets/london_headshot.JPG" alt="Photo of Suk Jin Chung" class="about-img"/>
-                <div class="about-text">
-                    <h2>About Me</h1>
-                    <p>I'm a rising senior, majoring in Informatics at University of Washington. Within my major, I 
-                        chose to specialise in Data Science track, along with minors in Statistics and Education.
-                    </p>
-                </div>
-            </section>
-    
-            <section id="gallery" class="photo-gallery">
-                <h2>What I do in my free time.</h2>
-                <div class="gallery-scroll">
-                    <div class="photo-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <img src="/assets/surfing.jpeg" alt="surfing picture">
-                            </div>
-                            <div class="card-back">
-                                <p>My new hobby! Recently learned <b>surfing</b> in San Diego and immediately fell in love with this water sports🌊</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="photo-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <img src="/assets/flight_pic.jpeg" alt="flight picture">
-                            </div>
-                            <div class="card-back">
-                                <p>I love <b>traveling</b>! (sometimes solo) My most recent trip is the one-month Europe Trip✈️</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="photo-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <img src="/assets/matcha.jpeg" alt="mathca girl picture">
-                            </div>
-                            <div class="card-back">
-                                <p>I'm a <b>matcha</b> girlie. I'll choose matcha over coffee any day anytime🍵</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="photo-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <img src="/assets/arizonaTrip.JPG" alt="Photo 1">
-                            </div>
-                            <div class="card-back">
-                                <p>I like <b>hiking</b> too! This is me hiking at the Devil's Bridge Trailhead in Arizona☀️</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="photo-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <img src="assets/creampuff.jpeg" alt="Photo 2">
-                            </div>
-                            <div class="card-back">
-                                <p><b>Baking</b> has been my hobby since high school. This is a cream puff tower I made for Thanksgiving🎂</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="photo-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <img src="assets/tulip_headshot.JPG" alt="Photo 2">
-                            </div>
-                            <div class="card-back">
-                                <p>I like to <b>explore new places</b>. I took this picture in the tulip town called Skagit Valley🌷</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="photo-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <img src="assets/dubs.jpeg" alt="Photo 2">
-                            </div>
-                            <div class="card-back">
-                                <p>Sometimes you will see me going to <b>social events</b> on campus and this is me & UW mascot, dubs🐶</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="me-section" class="me-section">
-                <h2>What makes me <em>ME</em></h2>
-                <p>Drag these traits and drop them in the test tube below👇</p>
-                <div class="traits" id="traits-container">
-                    <div class="trait" draggable="true" data-trait="Independent">Independent</div>
-                    <div class="trait" draggable="true" data-trait="Adventurous">Adventurous</div>
-                    <div class="trait" draggable="true" data-trait="Team Player">Team Player</div>
-                    <div class="trait" draggable="true" data-trait="Growth Mindset">Growth Mindset</div>
-                    <div class="trait" draggable="true" data-trait="Strong Communication">Strong Communication</div>
-                    <div class="trait" draggable="true" data-trait="Problem-solving">Problem-solving</div>
-                </div>
-              
-                <div class="test-tube" id="test-tube">
-                    <div class="tube-fill" id="tube-fill">
-                        <div class="bubbles" id="bubbles"></div>
-                    </div>
-                </div>
-
-                <div id="me-image-wrapper" class="hidden">
-                    <img id="me-image" src="assets/tawau.JPG" alt="Suk Jin Chung" />
-                    <p class="retry-hint">👈 Tap to try again</p>
-                </div>
-            </section> 
-
-            <section class="learn-more-section">
-                <h3>Want to learn more about me?</h3>
-                <p>Definitely check out my project! I have built my experience in data analysis and web development through classwork, 
-                    side projects and past work experiences.</p>
-                <a href="projects.html">
-                    <button class="primary-btn">Check It Out</button>
-                </a>
-            </section>
-            </div>
-        <footer>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/suk-jin003/" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://github.com/sukjin620" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-            </div>
-            <p>© 2025 Suk Jin Chung</p>
-        </footer>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <script src="script.js"></script>
-    </body>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title">
+                    Building AI systems that <span class="highlight">solve real problems</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Data Scientist & AI Engineer specializing in LLMs, machine learning, and cloud infrastructure. 
+                    Currently building compliance automation at Microsoft.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">2nd Place</div>
+                        <div class="stat-label">UW Datathon 2026</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">~50%</div>
+                        <div class="stat-label">Efficiency Gain (EcoPilot)</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">Microsoft</div>
+                        <div class="stat-label">Sponsored Capstone</div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="projects.html" class="btn btn-primary">View My Work</a>
+                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="assets/london_headshot.JPG" alt="Suk Jin Chung">
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Marquee -->
+    <section class="tech-marquee">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>Azure OpenAI</span>
+                <span>•</span>
+                <span>AWS Bedrock</span>
+                <span>•</span>
+                <span>Python</span>
+                <span>•</span>
+                <span>React</span>
+                <span>•</span>
+                <span>Machine Learning</span>
+                <span>•</span>
+                <span>NLP</span>
+                <span>•</span>
+                <span>HDBSCAN</span>
+                <span>•</span>
+                <span>scikit-learn</span>
+                <span>•</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span>Azure OpenAI</span>
+                <span>•</span>
+                <span>AWS Bedrock</span>
+                <span>•</span>
+                <span>Python</span>
+                <span>•</span>
+                <span>React</span>
+                <span>•</span>
+                <span>Machine Learning</span>
+                <span>•</span>
+                <span>NLP</span>
+                <span>•</span>
+                <span>HDBSCAN</span>
+                <span>•</span>
+                <span>scikit-learn</span>
+                <span>•</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead">
+                        I'm a rising senior at the University of Washington, specializing in Data Science with minors 
+                        in Statistics and Education. My work bridges technical innovation and real-world impact.
+                    </p>
+                    <p>
+                        Currently, I'm building an AI-powered Regulatory Readiness Copilot for Microsoft's CISO team, 
+                        using Azure OpenAI and NLP to automate compliance workflows. I'm passionate about using AI 
+                        and data science to solve meaningful problems—from healthcare equity to environmental sustainability.
+                    </p>
+                    <p>
+                        My technical toolkit spans the full ML lifecycle: from exploratory data analysis and feature 
+                        engineering to deploying production LLM agents on cloud platforms. I thrive in the intersection 
+                        of data, design, and development.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>Paul A. Volcker Gov. Internship Award </span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-building"></i>
+                            <span>Microsoft Sponsored Capstone</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>UW Informatics (Data Science Track)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/quad2.jpeg" alt="Suk Jin at UW">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Technical Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <ul>
+                        <li>Large Language Models (Azure OpenAI, AWS Bedrock)</li>
+                        <li>Prompt Engineering & LLM Agents</li>
+                        <li>NLP & Embeddings</li>
+                        <li>Clustering (HDBSCAN)</li>
+                        <li>Classification & Regression</li>
+                        <li>Feature Engineering</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Science</h3>
+                    <ul>
+                        <li>Python (pandas, NumPy, scikit-learn)</li>
+                        <li>R (Shiny, ggplot2, tidyverse)</li>
+                        <li>Statistical Analysis</li>
+                        <li>Data Visualization</li>
+                        <li>EDA & Data Cleaning</li>
+                        <li>A/B Testing</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <ul>
+                        <li>Azure (OpenAI, Functions)</li>
+                        <li>AWS (Bedrock, Lambda, S3, DynamoDB)</li>
+                        <li>ETL Pipelines</li>
+                        <li>REST APIs</li>
+                        <li>Git & GitHub</li>
+                        <li>CI/CD Basics</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Full-Stack Development</h3>
+                    <ul>
+                        <li>React & JavaScript</li>
+                        <li>HTML/CSS</li>
+                        <li>Firebase</li>
+                        <li>UI/UX Design (Figma)</li>
+                        <li>Responsive Web Design</li>
+                        <li>Frontend Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Preview -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I've Built</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card featured">
+                    <div class="card-header">
+                        <span class="card-label">Jan 2026 - Present</span>
+                        <span class="card-badge">Sponsored</span>
+                    </div>
+                    <h3>Microsoft Capstone – Regulatory Readiness Copilot</h3>
+                    <p class="card-subtitle">CISO Governance, Risk, and Compliance Team</p>
+                    <p class="card-description">
+                        Building an AI-powered compliance agent using Azure OpenAI, NLP pipelines, and semantic 
+                        search to automate regulatory compliance mapping and generate DevOps-ready assessments.
+                    </p>
+                    <div class="card-tech">
+                        <span>Azure OpenAI</span>
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>Vector Search</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="card-header">
+                        <span class="card-label">Feb 2026</span>
+                        <span class="card-badge award">2nd Place</span>
+                    </div>
+                    <h3>Healthcare Access Inequity Analysis</h3>
+                    <p class="card-subtitle">UW Datathon 2026</p>
+                    <p class="card-description">
+                        Developed HAII Index using HDBSCAN clustering to identify "forgotten populations" in 
+                        healthcare, revealing 11 vulnerable groups experiencing systemic access barriers.
+                    </p>
+                    <div class="card-tech">
+                        <span>Python</span>
+                        <span>HDBSCAN</span>
+                        <span>scikit-learn</span>
+                        <span>Healthcare Data</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="card-header">
+                        <span class="card-label">2025</span>
+                    </div>
+                    <h3>EcoPilot – ESG Compliance Automation</h3>
+                    <p class="card-subtitle">Sustainability AI Project</p>
+                    <p class="card-description">
+                        Designed autonomous LLM agent using AWS Bedrock (Claude) to automate ESG workflows, 
+                        reducing manual effort by ~50% with scalable ETL pipeline and React dashboard.
+                    </p>
+                    <div class="card-tech">
+                        <span>AWS Bedrock</span>
+                        <span>Lambda</span>
+                        <span>React</span>
+                        <span>DynamoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-cta">
+                <a href="projects.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Touch -->
+    <section class="personal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Beyond the Code</span>
+                <h2 class="section-title">When I'm Not Building</h2>
+            </div>
+            <div class="personal-grid">
+                <div class="personal-card">
+                    <div class="personal-image">
+                        <img src="assets/surfing.jpeg" alt="Surfing">
+                    </div>
+                    <div class="personal-content">
+                        <h3>🌊 Surfing</h3>
+                        <p>Recently caught the surfing bug in San Diego. There's something about riding waves that mirrors debugging—patience, timing, and the occasional wipeout.</p>
+                    </div>
+                </div>
+                <div class="personal-card">
+                    <div class="personal-image">
+                        <img src="assets/flight_pic.jpeg" alt="Travel">
+                    </div>
+                    <div class="personal-content">
+                        <h3>✈️ Traveling</h3>
+                        <p>Exploring new places fuels my creativity. Recent highlight: a month-long solo Europe trip that taught me as much about problem-solving as any course.</p>
+                    </div>
+                </div>
+                <div class="personal-card">
+                    <div class="personal-image">
+                        <img src="assets/matcha.jpeg" alt="Matcha">
+                    </div>
+                    <div class="personal-content">
+                        <h3>🍵 Matcha Enthusiast</h3>
+                        <p>Matcha over coffee, always. The ritual of preparation is meditative—much like the process of feature engineering.</p>
+                    </div>
+                </div>
+                <div class="personal-card">
+                    <div class="personal-image">
+                        <img src="assets/creampuff.jpeg" alt="Baking">
+                    </div>
+                    <div class="personal-content">
+                        <h3>🎂 Baking</h3>
+                        <p>Precision meets creativity in the kitchen. This cream puff tower taught me that presentation matters in data viz too.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Let's Build Something Together</h2>
+                <p>
+                    I'm always interested in collaborating on projects that combine AI, data science, and social impact. 
+                    Whether it's a research opportunity, internship, or just a conversation about ML—let's connect.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                    <a href="https://www.linkedin.com/in/suk-jin003/" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/sukjin620" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">SJ</div>
+                    <p>Data Scientist & AI Engineer</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigate</h4>
+                        <a href="#about">About</a>
+                        <a href="#experience">Experience</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://www.linkedin.com/in/suk-jin003/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/sukjin620" target="_blank">GitHub</a>
+                        <a href="mailto:your.email@example.com">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Suk Jin Chung. Built with care and attention to detail.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
