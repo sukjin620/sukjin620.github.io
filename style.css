@@ -770,14 +770,13 @@ section {
 }
 
 .responsibilities {
-    list-style: none;
+    list-style: disc;
+    padding-left: var(--spacing-lg);
     margin-bottom: var(--spacing-md);
 }
 
 .responsibilities li {
-    display: flex;
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     color: var(--color-text-secondary);
     line-height: 1.7;
 }
@@ -786,14 +785,18 @@ section {
     margin-bottom: 0;
 }
 
-.responsibilities i {
-    color: var(--color-success);
-    font-size: 1rem;
-    flex-shrink: 0;
-    margin-top: 4px;
+.responsibilities strong {
+    color: var(--color-primary);
+    font-weight: 600;
 }
 
-.responsibilities strong {
+.prose-description {
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.prose-description strong {
     color: var(--color-primary);
     font-weight: 600;
 }
