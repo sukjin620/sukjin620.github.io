@@ -10,16 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">SJ</a>
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#work-experience">Experience</a>
-                <a href="projects.html">Projects</a>
-                <a href="https://drive.google.com/file/d/1RbLULfdV2YJrlM1Jq-Now0sCA2J9s1gR/view?usp=sharing" target="_blank">Resume</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#work-experience">Experience</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="https://drive.google.com/file/d/1E3BmGtXqTjjWE23sY1jt9Fu-PN_alhCa/view?usp=drive_link" target="_blank">Resume</a>
                 <a href="contact.html" class="nav-cta">Contact</a>
             </div>
             <button class="mobile-toggle" aria-label="Toggle menu">
@@ -30,44 +31,25 @@
         </div>
     </nav>
 
-    <!-- Projects Hero -->
+    <!-- Hero -->
     <section class="projects-hero">
-        <div class="container">
-            <div class="projects-hero-content">
-                <div class="hero-badge">
-                    <span class="badge-dot"></span>
-                    Portfolio of Work
-                </div>
-                <h1>Building Solutions That Matter</h1>
-                <p>
-                    From AI-powered compliance agents to healthcare equity analysis, my projects span 
-                    machine learning, data science, and full-stack development—always focused on real-world impact.
-                </p>
-            </div>
+        <div class="projects-hero-content">
+            <p>Portfolio of Work</p>
+            <h1>Building Solutions That Matter</h1>
+            <p>
+                From AI-powered compliance agents to healthcare equity analysis, my projects span
+                machine learning, data science, and full-stack development—always focused on real-world impact.
+            </p>
         </div>
     </section>
 
-    <!-- Filter Section -->
+    <!-- Filter Buttons -->
     <section class="filter-section">
-        <div class="container">
-            <div class="filter-controls">
-                <button class="filter-btn active" data-category="all">
-                    <span>All Projects</span>
-                    <span class="count">11</span>
-                </button>
-                <button class="filter-btn" data-category="datasci">
-                    <span>Data Science & AI</span>
-                    <span class="count">6</span>
-                </button>
-                <button class="filter-btn" data-category="software">
-                    <span>Software Development</span>
-                    <span class="count">3</span>
-                </button>
-                <button class="filter-btn" data-category="uiux">
-                    <span>UI/UX Design</span>
-                    <span class="count">2</span>
-                </button>
-            </div>
+        <div class="filter-controls">
+            <button class="filter-btn active" data-category="all">All Projects <span class="count">14</span></button>
+            <button class="filter-btn" data-category="datasci">Data Science &amp; AI <span class="count">8</span></button>
+            <button class="filter-btn" data-category="software">Software Development <span class="count">4</span></button>
+            <button class="filter-btn" data-category="uiux">UI/UX Design <span class="count">2</span></button>
         </div>
     </section>
 
@@ -75,27 +57,38 @@
     <section class="projects-section">
         <div class="container">
             <div class="projects-grid">
-                
-                <!-- Microsoft Capstone -->
-                <article class="project-card featured" data-category="datasci">
+
+                <!-- 1. Microsoft Capstone -->
+                <div class="card project-card featured" data-category="datasci">
                     <div class="project-header">
                         <div class="project-meta">
-                            <span class="project-date">Jan 2026 - Present</span>
-                            <span class="project-badge sponsored">Sponsored</span>
+                            <span class="project-date">Jan 2026 – Present</span>
+                            <span class="project-badge sponsored">Sponsored Capstone</span>
                         </div>
                         <div class="project-category">
                             <i class="fas fa-robot"></i>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h2>Microsoft Capstone – Regulatory Readiness Copilot</h2>
-                        <p class="project-team">CISO Governance, Risk, and Compliance Team</p>
+                        <h2>Regulatory Readiness Copilot</h2>
+                        <p class="project-team">Microsoft CISO Governance, Risk, and Compliance Team</p>
                         <p class="project-description">
-                            Building an AI-powered compliance agent using Azure OpenAI, LLMs, and NLP pipelines to 
-                            extract, normalize, and structure security requirements from unstructured regulatory documents. 
-                            Developing a semantic engine with vector search and ontology-based mapping to generate 
-                            DevOps-ready compliance assessments.
+                            Building a Copilot agent using Azure OpenAI (LLMs &amp; embeddings) in an Agile environment
+                            to conduct compliance gap analysis.
+                            Leading NLP data engineering workflows with Azure Data Factory ETL pipelines and CI/CD deployment.
+                            It maps regulations to Microsoft Security Standards using vector search,
+                            ontology-based mapping, and confidence scoring to generate DevOps-ready assessments.
                         </p>
+                        <div class="project-impact two-col">
+                            <div class="impact-stat">
+                                <strong>Weeks to Mins</strong>
+                                <span>Manual Review Time</span>
+                            </div>
+                            <div class="impact-stat">
+                                <strong>LLM + RAG</strong>
+                                <span>Compliance Engine</span>
+                            </div>
+                        </div>
                         <div class="project-tags">
                             <span class="tag tool">Azure OpenAI</span>
                             <span class="tag tool">Python</span>
@@ -105,43 +98,93 @@
                             <span class="tag area">Compliance</span>
                         </div>
                         <div class="project-links">
-                            <a href="" class="project-link disabled">
-                                <i class="fas fa-lock"></i> Confidential
+                            <span class="project-link disabled">Confidential</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. DayOne – Onboarding Agent -->
+                <div class="card project-card" data-category="datasci">
+                    <div class="project-header">
+                        <div class="project-meta">
+                            <span class="project-date">2026</span>
+                            <span class="project-badge hackathon">🏅 Hackathon</span>
+                        </div>
+                        <div class="project-category">
+                            <i class="fas fa-people-arrows"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h2>DayOne – AI Onboarding Automation Agent</h2>
+                        <p class="project-team">Elastic Agent Builder Hackathon 2026</p>
+                        <p class="project-description">
+                            Multi-step AI agent that automates internal HR onboarding by detecting task blockers,
+                            surfacing knowledge-base guides via semantic search, and recommending Jira tickets—all
+                            backed by Elasticsearch Serverless. Every output includes a 0–100 confidence score and
+                            plain-English explanation for full HR auditability.
+                        </p>
+                        <div class="project-impact">
+                            <div class="impact-stat">
+                                <strong>1,158</strong>
+                                <span>Docs Indexed</span>
+                            </div>
+                            <div class="impact-stat">
+                                <strong>8 Tools</strong>
+                                <span>ES|QL + Semantic</span>
+                            </div>
+                            <div class="impact-stat">
+                                <strong>0–100</strong>
+                                <span>Confidence Score</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag tool">Elasticsearch</span>
+                            <span class="tag tool">ES|QL</span>
+                            <span class="tag tool">Python</span>
+                            <span class="tag area">LLM Agents</span>
+                            <span class="tag area">Semantic Search</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sukjin620/onboarding-agent" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="https://devpost.com/software/dayone-ai-onboarding-automation-agent" target="_blank" class="project-link secondary">
+                                DevPost
                             </a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- Datathon 2026 -->
-                <article class="project-card award" data-category="datasci">
+                <!-- 3. Healthcare Datathon -->
+                <div class="card project-card award" data-category="datasci">
                     <div class="project-header">
                         <div class="project-meta">
                             <span class="project-date">Feb 2026</span>
                             <span class="project-badge award">🏆 2nd Place</span>
                         </div>
                         <div class="project-category">
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-heartbeat"></i>
                         </div>
                     </div>
                     <div class="project-content">
                         <h2>Healthcare Access Inequity Analysis</h2>
                         <p class="project-team">UW Datathon 2026 – Team Project</p>
                         <p class="project-description">
-                            Developed the Healthcare Access Inequity Index (HAII) using HDBSCAN clustering to identify 
-                            "forgotten populations" experiencing systemic healthcare barriers. Discovered 11 vulnerable 
+                            Developed the Healthcare Access Inequity Index (HAII) using HDBSCAN clustering to identify
+                            "forgotten populations" experiencing systemic healthcare barriers. Discovered 11 vulnerable
                             groups and provided data-driven recommendations targeting ~20% of adults with worst outcomes.
                         </p>
                         <div class="project-impact">
                             <div class="impact-stat">
                                 <strong>11</strong>
-                                <span>Forgotten Populations Identified</span>
+                                <span>Forgotten Populations</span>
                             </div>
                             <div class="impact-stat">
                                 <strong>74</strong>
-                                <span>Demographic Groups Analyzed</span>
+                                <span>Demographic Groups</span>
                             </div>
                             <div class="impact-stat">
-                                <strong>6 Years</strong>
+                                <strong>6 Yrs</strong>
                                 <span>Temporal Data</span>
                             </div>
                         </div>
@@ -150,21 +193,24 @@
                             <span class="tag tool">HDBSCAN</span>
                             <span class="tag tool">scikit-learn</span>
                             <span class="tag area">Machine Learning</span>
-                            <span class="tag area">Healthcare</span>
+                            <span class="tag area">Healthcare Data</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/Nandini393/HealthcareAccessInequalityAnalysis" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> View Code
                             </a>
                             <a href="https://drive.google.com/file/d/110b2HqIycVKnnKbJkrfELUhCpZtGLF89/view?usp=sharing" target="_blank" class="project-link secondary">
-                                <i class="fas fa-file-pdf"></i> Full Report
+                                Full Report
+                            </a>
+                            <a href="https://public.tableau.com/views/Healthcare_Clustering/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="project-link secondary">
+                                <i class="fas fa-chart-pie"></i> Tableau
                             </a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- EcoPilot -->
-                <article class="project-card" data-category="datasci">
+                <!-- 4. EcoPilot -->
+                <div class="card project-card" data-category="datasci">
                     <div class="project-header">
                         <div class="project-meta">
                             <span class="project-date">2025</span>
@@ -177,13 +223,13 @@
                         <h2>EcoPilot – ESG Compliance Automation</h2>
                         <p class="project-team">Sustainability AI Project</p>
                         <p class="project-description">
-                            Designed autonomous LLM-based compliance agent using AWS Bedrock (Claude) and prompt 
-                            engineering to automate ESG workflows, reducing manual effort by ~50%. Implemented 
+                            Designed autonomous LLM-based compliance agent using AWS Bedrock (Claude) and prompt
+                            engineering to automate ESG workflows, reducing manual effort by ~50%. Implemented
                             scalable ETL pipeline with AWS Lambda, S3, and DynamoDB integrated with React dashboard.
                         </p>
                         <div class="project-highlight">
-                            <i class="fas fa-chart-bar"></i>
-                            <strong>~50% reduction</strong> in manual compliance effort
+                            <i class="fas fa-chart-line"></i>
+                            <p><strong>~50% reduction</strong> in manual compliance effort</p>
                         </div>
                         <div class="project-tags">
                             <span class="tag tool">AWS Bedrock</span>
@@ -194,31 +240,93 @@
                             <span class="tag area">ETL Pipeline</span>
                         </div>
                         <div class="project-links">
-                            <a href="" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> View Project
+                            <a href="https://github.com/sukjin620/EcoPilot-AI-Sustainability-Compliance-Agent" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
                             </a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- Loan Prediction -->
-                <article class="project-card" data-category="datasci">
+                <!-- 5. Chasing the Emerald -->
+                <div class="card project-card" data-category="datasci">
                     <div class="project-header">
                         <div class="project-meta">
                             <span class="project-date">2025</span>
                         </div>
                         <div class="project-category">
-                            <i class="fas fa-brain"></i>
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h2>Chasing the Emerald – Seattle Air Travel</h2>
+                        <p class="project-team">INFO 474 – Interactive Article (Team Project)</p>
+                        <p class="project-description">
+                            A scrollytelling data journalism piece exploring Seattle's air travel patterns across a decade.
+                            Features interactive charts revealing airline growth trajectories (up to 1050% expansion),
+                            optimal booking timing, and a flight reliability calendar built from Bureau of Transportation
+                            Statistics data.
+                        </p>
+                        <div class="project-impact">
+                            <div class="impact-stat">
+                                <strong>10 Yrs</strong>
+                                <span>BTS Flight Data</span>
+                            </div>
+                            <div class="impact-stat">
+                                <strong>5</strong>
+                                <span>Airlines Analyzed</span>
+                            </div>
+                            <div class="impact-stat">
+                                <strong>10x</strong>
+                                <span>Peak Growth</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag tool">P5.js</span>
+                            <span class="tag tool">JavaScript</span>
+                            <span class="tag tool">HTML/CSS</span>
+                            <span class="tag area">Data Visualization</span>
+                            <span class="tag area">Scrollytelling</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://yongxi1202.github.io/info474-autumn25--project/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Article
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Early Loan Repayment -->
+                <div class="card project-card" data-category="datasci">
+                    <div class="project-header">
+                        <div class="project-meta">
+                            <span class="project-date">2025</span>
+                        </div>
+                        <div class="project-category">
+                            <i class="fas fa-chart-bar"></i>
                         </div>
                     </div>
                     <div class="project-content">
                         <h2>Early Loan Repayment Risk Prediction</h2>
                         <p class="project-team">Machine Learning Project</p>
                         <p class="project-description">
-                            Built predictive model using logistic regression with L1/L2 regularization and cross-validation 
-                            to classify borrower risk based on first 30 days of payment behavior. Conducted comprehensive 
+                            Built predictive model using logistic regression with L1/L2 regularization and cross-validation
+                            to classify borrower risk based on first 30 days of payment behavior. Conducted comprehensive
                             EDA and feature engineering to identify key risk indicators.
                         </p>
+                        <div class="project-impact">
+                            <div class="impact-stat">
+                                <strong>71%</strong>
+                                <span>Recall Score</span>
+                            </div>
+                            <div class="impact-stat">
+                                <strong>30-Day</strong>
+                                <span>Behavioral Window</span>
+                            </div>
+                            <div class="impact-stat">
+                                <strong>39k+</strong>
+                                <span>Loans Analyzed</span>
+                            </div>
+                        </div>
                         <div class="project-tags">
                             <span class="tag tool">Python</span>
                             <span class="tag tool">scikit-learn</span>
@@ -227,15 +335,15 @@
                             <span class="tag area">Risk Analysis</span>
                         </div>
                         <div class="project-links">
-                            <a href="" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> View Project
+                            <a href="https://sukjin620.github.io/project_link/PD_Modeling.html" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- INFO 201 -->
-                <article class="project-card" data-category="datasci">
+                <!-- 7. NYC Education -->
+                <div class="card project-card" data-category="datasci">
                     <div class="project-header">
                         <div class="project-meta">
                             <span class="project-date">2024</span>
@@ -248,8 +356,8 @@
                         <h2>NYC High School Education Inequity Analysis</h2>
                         <p class="project-team">INFO 201 Final Project</p>
                         <p class="project-description">
-                            Interactive data analysis exploring educational inequities across NYC high schools using 
-                            R and Shiny. Built comprehensive visualizations to identify patterns in resource distribution 
+                            Interactive data analysis exploring educational inequities across NYC high schools using
+                            R and Shiny. Built comprehensive visualizations to identify patterns in resource distribution
                             and student outcomes across different districts.
                         </p>
                         <div class="project-tags">
@@ -264,10 +372,10 @@
                             </a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- INFO 370 -->
-                <article class="project-card" data-category="datasci">
+                <!-- 8. Seattle Tech Access -->
+                <div class="card project-card" data-category="datasci">
                     <div class="project-header">
                         <div class="project-meta">
                             <span class="project-date">2025</span>
@@ -280,8 +388,8 @@
                         <h2>Technology Access Analysis in Seattle</h2>
                         <p class="project-team">INFO 370 Quarto Report</p>
                         <p class="project-description">
-                            Comprehensive analysis of technology access and adoption patterns in Seattle, WA using R 
-                            and Quarto. Identified digital divide trends and provided policy recommendations for 
+                            Comprehensive analysis of technology access and adoption patterns in Seattle, WA using R
+                            and Quarto. Identified digital divide trends and provided policy recommendations for
                             improving tech equity.
                         </p>
                         <div class="project-tags">
@@ -291,29 +399,76 @@
                             <span class="tag area">Policy Research</span>
                         </div>
                         <div class="project-links">
-                            <a href="" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> View Report
+                            <a href="#" class="project-link secondary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Student Recipe Recommender -->
+                <div class="card project-card" data-category="software">
+                    <div class="project-header">
+                        <div class="project-meta">
+                            <span class="project-date">2025</span>
+                        </div>
+                        <div class="project-category">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h2>Student Recipe Recommender</h2>
+                        <p class="project-team">INFO 376 – Full-Stack Search Engine</p>
+                        <p class="project-description">
+                            Recipe search and recommendation system for budget-conscious students. Uses a hybrid
+                            BM25 + ingredient-line matching algorithm over 63,000+ recipes with NLTK lemmatization
+                            for better token matching. Features keyword search, ingredient-based lookup, and a
+                            tunable scoring API built with Flask.
+                        </p>
+                        <div class="project-impact">
+                            <div class="impact-stat">
+                                <strong>63k+</strong>
+                                <span>Recipes Indexed</span>
+                            </div>
+                            <div class="impact-stat">
+                                <strong>BM25</strong>
+                                <span>Hybrid Ranking</span>
+                            </div>
+                            <div class="impact-stat">
+                                <strong>Flask</strong>
+                                <span>REST API</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag tool">Python</span>
+                            <span class="tag tool">Flask</span>
+                            <span class="tag tool">NLTK</span>
+                            <span class="tag tool">scikit-learn</span>
+                            <span class="tag area">Search Engine</span>
+                            <span class="tag area">NLP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KatKho/student-recipe-recommender" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
                             </a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- TechConnect -->
-                <article class="project-card" data-category="software">
+                <!-- 10. TechConnect -->
+                <div class="card project-card" data-category="software">
                     <div class="project-header">
                         <div class="project-meta">
                             <span class="project-date">2024</span>
                         </div>
                         <div class="project-category">
-                            <i class="fas fa-code"></i>
+                            <i class="fas fa-users"></i>
                         </div>
                     </div>
                     <div class="project-content">
                         <h2>TechConnect</h2>
                         <p class="project-team">Full-Stack Web Application</p>
                         <p class="project-description">
-                            Social platform connecting students with tech resources and opportunities. Built with 
-                            React, Firebase, and modern web technologies. Features real-time messaging, resource 
+                            Social platform connecting students with tech resources and opportunities. Built with
+                            React, Firebase, and modern web technologies. Features real-time messaging, resource
                             sharing, and event management.
                         </p>
                         <div class="project-tags">
@@ -321,7 +476,6 @@
                             <span class="tag tool">Firebase</span>
                             <span class="tag tool">JavaScript</span>
                             <span class="tag area">Full Stack</span>
-                            <span class="tag area">Web Development</span>
                         </div>
                         <div class="project-links">
                             <a href="https://info340a9project.web.app/home#%23" target="_blank" class="project-link">
@@ -329,23 +483,23 @@
                             </a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- Personal Website -->
-                <article class="project-card" data-category="software">
+                <!-- 11. Portfolio -->
+                <div class="card project-card" data-category="software">
                     <div class="project-header">
                         <div class="project-meta">
                             <span class="project-date">2025</span>
                         </div>
                         <div class="project-category">
-                            <i class="fas fa-palette"></i>
+                            <i class="fas fa-code"></i>
                         </div>
                     </div>
                     <div class="project-content">
                         <h2>Personal Portfolio Website</h2>
                         <p class="project-team">Front-End Development</p>
                         <p class="project-description">
-                            This site! Designed and coded from scratch using modern web technologies. Features 
+                            This site! Designed and coded from scratch using modern web technologies. Features
                             responsive design, smooth animations, and professional presentation of projects and skills.
                         </p>
                         <div class="project-tags">
@@ -353,18 +507,15 @@
                             <span class="tag tool">CSS</span>
                             <span class="tag tool">JavaScript</span>
                             <span class="tag area">Front-End</span>
-                            <span class="tag area">Web Design</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://sukjin620.github.io" target="_blank" class="project-link">
-                                <i class="fas fa-home"></i> You're Here!
-                            </a>
+                            <a href="https://sukjin620.github.io" class="project-link secondary">You're Here!</a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- MASA Website -->
-                <article class="project-card" data-category="software">
+                <!-- 12. MASA -->
+                <div class="card project-card" data-category="software">
                     <div class="project-header">
                         <div class="project-meta">
                             <span class="project-date">2024</span>
@@ -377,26 +528,25 @@
                         <h2>MASA Website</h2>
                         <p class="project-team">Malaysian Student Association</p>
                         <p class="project-description">
-                            Informational website for the Malaysian Student Association at UW. Clean, accessible 
-                            design built with HTML and CSS, featuring event calendars, member resources, and 
+                            Informational website for the Malaysian Student Association at UW. Clean, accessible
+                            design built with HTML and CSS, featuring event calendars, member resources, and
                             cultural information.
                         </p>
                         <div class="project-tags">
                             <span class="tag tool">HTML</span>
                             <span class="tag tool">CSS</span>
                             <span class="tag area">Front-End</span>
-                            <span class="tag area">Web Development</span>
                         </div>
                         <div class="project-links">
-                            <a href="" class="project-link">
+                            <a href="https://sukjin620.github.io/MASA_website/" target="_blank" class="project-link">
                                 <i class="fas fa-external-link-alt"></i> View Website
                             </a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- WeSwap -->
-                <article class="project-card" data-category="uiux">
+                <!-- 13. WeSwap -->
+                <div class="card project-card" data-category="uiux">
                     <div class="project-header">
                         <div class="project-meta">
                             <span class="project-date">2024</span>
@@ -409,8 +559,8 @@
                         <h2>WeSwap</h2>
                         <p class="project-team">Mobile App Design</p>
                         <p class="project-description">
-                            Mobile application design for campus borrowing platform. Conducted user research, 
-                            created personas, and designed high-fidelity prototypes in Figma. Features item 
+                            Mobile application design for campus borrowing platform. Conducted user research,
+                            created personas, and designed high-fidelity prototypes in Figma. Features item
                             lending, user ratings, and in-app messaging.
                         </p>
                         <div class="project-tags">
@@ -420,14 +570,14 @@
                         </div>
                         <div class="project-links">
                             <a href="https://www.figma.com/proto/m5sV371TEf5bDJ8uGW8uot/Final-Project?node-id=0-1&t=L2otKpD1zstfN8Ff-1" target="_blank" class="project-link">
-                                <i class="fas fa-figma"></i> View Prototype
+                                View Prototype
                             </a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- Revivo -->
-                <article class="project-card" data-category="uiux">
+                <!-- 14. Revivo -->
+                <div class="card project-card" data-category="uiux">
                     <div class="project-header">
                         <div class="project-meta">
                             <span class="project-date">2024</span>
@@ -440,8 +590,8 @@
                         <h2>Revivo</h2>
                         <p class="project-team">Mobile App Design</p>
                         <p class="project-description">
-                            Mobile app design for device repair services at UW. Complete design process from user 
-                            interviews to final prototype, focusing on streamlining the repair request and tracking 
+                            Mobile app design for device repair services at UW. Complete design process from user
+                            interviews to final prototype, focusing on streamlining the repair request and tracking
                             experience for students.
                         </p>
                         <div class="project-tags">
@@ -451,14 +601,14 @@
                         </div>
                         <div class="project-links">
                             <a href="https://www.figma.com/proto/0FlEqTnLaHVyFTnfLRvJ4r/Revivo?page-id=4%3A35&node-id=189-1664&p=f&viewport=585%2C210%2C0.21&t=RyrDdCCXHg5W9abr-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=189%3A1318" target="_blank" class="project-link">
-                                <i class="fas fa-figma"></i> View Prototype
+                                View Prototype
                             </a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-            </div>
-        </div>
+            </div><!-- /.projects-grid -->
+        </div><!-- /.container -->
     </section>
 
     <!-- CTA Section -->
@@ -467,14 +617,12 @@
             <div class="cta-content">
                 <h2>Interested in Collaborating?</h2>
                 <p>
-                    I'm always looking for opportunities to work on meaningful projects that combine AI, 
+                    I'm always looking for opportunities to work on meaningful projects that combine AI,
                     data science, and social impact. Let's build something great together.
                 </p>
                 <div class="cta-buttons">
                     <a href="contact.html" class="btn btn-primary">Get In Touch</a>
-                    <a href="https://drive.google.com/file/d/1RbLULfdV2YJrlM1Jq-Now0sCA2J9s1gR/view?usp=sharing" target="_blank" class="btn btn-secondary">
-                        <i class="fas fa-file-pdf"></i> View Resume
-                    </a>
+                    <a href="https://drive.google.com/file/d/1E3BmGtXqTjjWE23sY1jt9Fu-PN_alhCa/view?usp=drive_link" target="_blank" class="btn btn-secondary">View Resume</a>
                 </div>
             </div>
         </div>
@@ -486,13 +634,14 @@
             <div class="footer-content">
                 <div class="footer-left">
                     <div class="footer-logo">SJ</div>
-                    <p>Data Scientist & AI Engineer</p>
+                    <p>Data Scientist &amp; AI Engineer</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Navigate</h4>
                         <a href="index.html#about">About</a>
-                        <a href="index.html#experience">Experience</a>
+                        <a href="index.html#skills">Skills</a>
+                        <a href="index.html#work-experience">Experience</a>
                         <a href="projects.html">Projects</a>
                         <a href="contact.html">Contact</a>
                     </div>
@@ -500,17 +649,17 @@
                         <h4>Connect</h4>
                         <a href="https://www.linkedin.com/in/suk-jin003/" target="_blank">LinkedIn</a>
                         <a href="https://github.com/sukjin620" target="_blank">GitHub</a>
-                        <a href="mailto:sukjin@uw.edu">Email</a>
+                        <a href="/cdn-cgi/l/email-protection#5e2d2b353437301e2b29703b3a2b">Email</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Suk Jin Chung. Built with care and attention to detail.</p>
+                <p>&copy; 2026 Suk Jin Chung. Built with care and attention to detail.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script src="projects-script.js"></script>
+    <script src="projects.js"></script>
 </body>
 </html>

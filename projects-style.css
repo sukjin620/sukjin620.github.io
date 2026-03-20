@@ -198,6 +198,11 @@
     color: var(--color-accent-warm);
 }
 
+.project-badge.hackathon {
+    background: rgba(244, 162, 97, 0.15);
+    color: #c47c2b;
+}
+
 .project-category {
     width: 50px;
     height: 50px;
@@ -245,6 +250,16 @@
 }
 
 /* Project Impact Stats */
+.project-impact.two-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--spacing-md);
+}
+
 .project-impact {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
